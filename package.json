@@ -2,14 +2,14 @@
   "name": "autocomplete-nn",
   "version": "1.0.0",
   "description": "week-4 project",
-  "main": "index.js",
+  "main": "public/main.js",
   "dependencies": {
     "tap-spec": "^5.0.0",
     "tape": "^4.10.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "tape test.js| tap-spec"
+    "test": "tape test/test.js | tap-spec"
   },
   "repository": {
     "type": "git",
