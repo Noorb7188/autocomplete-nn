@@ -2,16 +2,44 @@ body {
 background-image: url('./piano.jpg');
 background-repeat: no-repeat;
 background-attachment: fixed;
-background-position: center;
+/* background-position: center; */
 background-size: cover;
 text-align: center;
 }
 
 .headLine {
-  font-size: 50px;
-  color: #008080;
+  font-size: 120px;
+  color: #ffffff;
+  font-family: Special Elite, cursive;
+  padding: 5% 5% 5% 5%;
+  text-shadow: 4px 4px #000000;
 }
 
-p {
+.typeSentence {
+  font-size: 60px;
+  font-family: Special Elite, cursive;
+  color: #74DF00;
+  text-shadow: 3px 3px #000000;
+}
+
+.search {
+  border-radius: 5%;
+  border-width: 2px;
   font-size: 35px;
+  font-family: Special Elite, cursive;
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    text-align: center;
+  }
+  .headLine {
+    font-size: 90px;
+    padding: 5% 5% 5% 5%;
+  }
+  .typeSentence {
+    font-size: 55px;
+    color: #B40404;
+  }
 }
