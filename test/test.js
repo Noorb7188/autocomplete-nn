@@ -1,5 +1,5 @@
 var test = require("tape");
-var splitWords = require("../src/main.js");
+var splitWords = require("../src/handler.js");
 
 var testString = "abcd efgh.qrst uvwx";
 
