@@ -1,7 +1,17 @@
 body {
-background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfLVMjBpDG6aLqlw1LCEBviLa4nEgPZfOE48yJeYHi2EfJBZ3-SQ');
+background-image: url('http://stephenmuise.com/wp-content/uploads/2016/02/Muddy-Piano-3-Web.jpg');
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
 background-size: cover;
+text-align: center;
+}
+
+.headLine {
+  font-size: 50px;
+  color: #008080;
+}
+
+p {
+  font-size: 35px;
 }
