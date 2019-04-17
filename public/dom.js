@@ -4,6 +4,6 @@ inputValue.addEventListener('keyup', function(e) {
   fetchData(inputValue.value);
 })
 
-function fetchData (inputVal) {
-
+function fetchData(e) {
+  event.preventDefault();
 }

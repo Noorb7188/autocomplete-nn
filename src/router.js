@@ -15,8 +15,29 @@ var router = (request, response) => {
       response.writeHead(200, { 'Content-Type' : 'text/html' });
       response.end(file);
     }
+  })
+} else if (url.indexOf('/public/') !== -1) {
+  const extension = url.split(".")[1];
+    const extensionTypes = {
+      html : 'text/html',
+      js : 'application/javascript',
+      css : 'text/css',
+    };
+  const filePath = path.join(__dirname, '..', url);
+  fs.readFile(filePath, (error, file) => {
+    if (error) {
+      console.log(error);
+      response.writeHead(404, { 'Content-Type' : 'text/html' });
+      response.end('<h1> So sorry, I can\'t find this file...</h1>');
+    } else {
+      response.writeHead(200, { 'Content-Type' : extensionTypes[extension]});
+      response.end(file);
+    }
   });
-}
+ } else {
+    response.writeHead(404, { 'Content-Type' : 'text/html' });
+    response.end('<h1>404 Not Found </h1>');
+  }
 };
 
 module.exports = router;
