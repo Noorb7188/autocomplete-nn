@@ -1,7 +1,9 @@
-var inputValue = document.getElementById('form')[0];
+var inputValue = document.getElementById('search');
 inputValue.addEventListener('keyup', function(e) {
   e.preventDefault();
-  fetchData(inputValue.value, );
+  fetchData(inputValue.value);
 })
 
-function fetchData ()
+function fetchData (inputVal) {
+
+}
