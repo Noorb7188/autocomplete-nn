@@ -40,10 +40,10 @@ var router = (request, response) => {
   });
 } else if (url.indexOf('/search') !== -1) {
     console.log('we are in the search');
-    handler.filterText();
+    handler.filterdkeys();
     response.end('youre in the search');
-    
-  } 
+
+  }
  else {
     response.writeHead(404, { 'Content-Type' : 'text/html' });
     response.end('<h1> 404 Not Found </h1>');
