@@ -1,4 +1,4 @@
-# autocomplete-nn
+# Autocomplete-nn
 
 ** Team members **  
  - @Noorb7188  :sunglasses:
@@ -6,7 +6,9 @@
 
 Before we start coding we draw our architecture to make a plan for writing our code step by step .   
 
-![]()  
+## **Architecture and Data FLow**  
+
+![](./public/assets/arch.jpeg)  
 
 :scroll: First we choose a list of words called *Archaic*  words- the words that are ancient and are no longer in use . we took it from [here](https://en.oxforddictionaries.com/explore/archaic-words).  
 
@@ -18,4 +20,4 @@ Before we start coding we draw our architecture to make a plan for writing our c
 
 :muscle: It was very challenging because we have been exposed to these materials just for day and a half, we couldn't put all the pieces together, but we tried our best to learn through coding this app.
 
-If we had more time we surely would would finish the app untill the end till the last detail , and try new things we haven't learn even like `xmlhttprequest`. :no_good:
+If we had more time we surely would finish the app untill the end till the last detail , and try new things we haven't learn even like `xmlhttprequest`. :no_good:
