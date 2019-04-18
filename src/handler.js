@@ -12,17 +12,17 @@ var splitWords = function(text) {
     return acc;
   }, {});
 };
-// function that added the value of the input in to the url
-var searchEndpoint = function (val) {
-return '/search?+q='+val;
-}
-// function that filters the keys that starts with the given value - passed tested!
-var filterText = function(input) {
-return Object.keys(splitWords(text)).filter(function(val){
-    return val.startsWith(input);
-  })
-};
+// i need to conect between the input from the dom to the handler function
 
+// function that filters the keys that starts with the given value - passed tested!
+var filterdkeys = function() {
+var filtered =  Object.keys(splitWords(text)).filter(function(val){
+  console.log(val);
+    return val.startsWith("a");
+  })
+  console.log(filtered);
+  return filtered.slice(0, 10);
+};
 
 var handlerSearch = function (data) {
 return splitWords(data);
@@ -31,6 +31,5 @@ return splitWords(data);
 module.exports = {
   splitWords,
   handlerSearch,
-  filterText,
-  searchEndpoint
+  filterdkeys,
 }
