@@ -1,20 +1,22 @@
-var inputValue = document.getElementById('search').value;
+var input = document.getElementById("search");
+var inputVal = input.value;
 
-inputValue.addEventListener('keyup', function(e) {
+// somehow the value of my input is kept undefined :(
+input.addEventListener('keyup', function(e) {
+  console.log('my val from e.listener' , inputVal);
   e.preventDefault();
-  fetchData(inputValue);
-})
+  fetchData(inputVal);
+});
 
-function fetchData(e) {
-  event.preventDefault();
-var input = document.getElementById('search');
-
-fetch('/search')
+function fetchData(inputVal) {
+  console.log('may value from fetch is ', inputVal);
+fetch('/search?q='+inputVal)
 .then(function(response) {
+  console.log('my response is:', JSON.stringify(response));
   return response.json();
 })
 .then(function(data) {
-  console.log("my data is ", data);
+console.log(data);
 })
 .catch(function(error) {
   console.log(error);
