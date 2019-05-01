@@ -16,7 +16,7 @@ fetch('/search?q='+inputVal)
   return response.json();
 })
 .then(function(data) {
-  console.log("my data is ", data);
+console.log(data);
 })
 .catch(function(error) {
   console.log(error);
