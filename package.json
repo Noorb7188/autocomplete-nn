@@ -4,6 +4,7 @@
   "description": "week-4 project",
   "main": "public/main.js",
   "dependencies": {
+    "request": "^2.88.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.10.1"
   },
