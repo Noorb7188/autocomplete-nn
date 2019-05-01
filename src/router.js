@@ -39,10 +39,7 @@ var router = (request, response) => {
     }
   });
 } else if (url.indexOf('/search') !== -1) {
-    console.log('we are in the search');
-    handler.filterdkeys();
-    response.end('youre in the search');
-
+    handler.handlerSearch(request, response);
   }
  else {
     response.writeHead(404, { 'Content-Type' : 'text/html' });
